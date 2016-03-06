@@ -4,8 +4,14 @@
     android:id="@+id/container"
     android:orientation="horizontal"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center_vertical">
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px"/>
+
 
     <EditText
         android:layout_width="0dp"
@@ -13,7 +19,9 @@
         android:id="@+id/text_to_translate"
         android:layout_weight="1"
         android:hint="@string/hint"
-        android:singleLine="true"/>
+        android:singleLine="true"
+        android:nextFocusUp="@id/text_to_translate"
+        android:nextFocusLeft="@id/text_to_translate"/>
 
     <Button
         android:layout_width="wrap_content"

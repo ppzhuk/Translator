@@ -7,8 +7,17 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="ppzh.ru.translator.MainActivity">
+    tools:context="ppzh.ru.translator.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
 
    <include layout="@layout/transtale_prompt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/from_to"
+        android:id="@+id/textView"
+        android:layout_gravity="start|center"/>
 
 </LinearLayout>

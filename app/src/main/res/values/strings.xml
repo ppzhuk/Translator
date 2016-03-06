@@ -3,5 +3,7 @@
     <string name="go_msg">Go!</string>
     <string name="hint">Word to translate</string>
     <string name="title_activity_translate">translate</string>
+    <string name="from_to">Eng -> Ru</string>
+    <string name="translation">Translation:</string>
     <string name="empty_text_msg">Enter the word you want to translate.</string>
 </resources>

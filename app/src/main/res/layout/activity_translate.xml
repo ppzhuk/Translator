@@ -21,29 +21,53 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="@dimen/activity_vertical_margin"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.89">
+        android:layout_weight="1">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:indeterminate="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Text"
-            android:id="@+id/textView" />
+            android:text="@string/translation"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"/>
 
-        <ScrollView
+        <TextView
+            android:id="@+id/translated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="placeholder"
+            android:textColor="#000000"
+            android:paddingStart="16dp"
+            android:paddingLeft="16dp"
+            android:paddingBottom="5dp"/>
+
+        <View
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/scrollView" >
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
 
-            <GridView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/gridView" />
-        </ScrollView>
-
+        <GridView
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gridView" />
     </LinearLayout>
 
 </LinearLayout>
