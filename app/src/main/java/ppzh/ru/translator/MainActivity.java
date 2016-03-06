@@ -53,17 +53,11 @@ public class MainActivity extends AppCompatActivity {
         String text = et.getText().toString().trim();
         if (text.length() == 0) {
             Snackbar.make(v, R.string.empty_text_msg, Snackbar.LENGTH_LONG).show();
+            toTranslate.setText("");
         } else {
             Intent i = new Intent(v.getContext(), TranslateActivity.class);
             i.putExtra(TEXT, text);
             startActivity(i);
         }
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        if (toTranslate != null)
-            toTranslate.setText("");
     }
 }
